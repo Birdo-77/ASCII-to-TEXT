@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 20px;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 8px 0px rgb(0, 0, 0);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+div{
+    text-align: center;
+}
+
+.bg-asc{
+    background-color: #F29F05;
+}
+
+.bg-txt{
+    background-color: #F2CB05;
+}
+
+h1{
+    margin: 10px 0px;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+textarea{
+    padding: 10px 5px 0px 10px;
+    font-size: 1rem;
+    height: 70%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+	outline: inherit;
+    border: none;
+    transition: border .2s ease;
+}
+
+button:hover{
+    border: 1px solid yellow;
+}
+
+button:active{
+    border: 2px solid gold;
+}
+
+/*
+    Scrollbar
+*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #dddada;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*
+    Media
+*/
+
+@media (max-width: 750px){
+    h1{
+        font-size: 1.8rem;
+    }
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    button{
+        padding: 7px 12px;
+    }
+}
+
+@media (max-width: 420px){
+    textarea{
+        width: 95%;
+    }
+}
